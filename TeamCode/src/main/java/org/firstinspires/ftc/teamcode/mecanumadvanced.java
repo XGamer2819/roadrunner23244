@@ -20,7 +20,7 @@ public class mecanumadvanced extends LinearOpMode {
     private DcMotor sliderotation;
     private DcMotor slide;
     private Servo hanginghold;
-    private Servo useless;
+    private int useless = 1;
     private DcMotor rightFront;
     private DcMotor rightBack;
     private CRServo intake;
