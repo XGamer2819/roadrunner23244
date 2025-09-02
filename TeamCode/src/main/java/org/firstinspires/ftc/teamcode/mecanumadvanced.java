@@ -19,7 +19,6 @@ public class mecanumadvanced extends LinearOpMode {
     private DcMotor leftFront;
     private DcMotor sliderotation;
     private DcMotor slide;
-    private int useless = 3;
     private Servo hanginghold;
     private DcMotor rightFront;
     private DcMotor rightBack;
@@ -86,10 +85,7 @@ public class mecanumadvanced extends LinearOpMode {
                     telemetry.addData("txnc", result.getTxNC());
                     telemetry.addData("ty", result.getTy());
                     telemetry.addData("tync", result.getTyNC());
-
                     telemetry.addData("Botpose", botpose.toString());
-
-                    // Access barcode results
                     List<LLResultTypes.BarcodeResult> barcodeResults = result.getBarcodeResults();
                     for (LLResultTypes.BarcodeResult br : barcodeResults) {
                         telemetry.addData("Barcode", "Data: %s", br.getData());
